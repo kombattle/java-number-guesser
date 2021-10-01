@@ -14,13 +14,13 @@ let compareGuesses = (humanGuess,computerGuess,targetGuess) => {
   );
   const computerDif = Math.abs(targetGuess - computerGuess);
   if (humanDif < computerDif || humanDif === computerDif) {
-    return "Human Win"
+    return true
   }
   else if (humanGuess > 9 || humanGuess < 0) {
     return alert("you can put number only 0 to 9")
   }
   else {
-    return "Computer Win
+    return false
   }
 
 }
