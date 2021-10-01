@@ -20,9 +20,17 @@ const compareGuesses = (humanGuess,computerGuess,targetGuess) => {
     }
 }
 
-let updateScore = () => {
 
+let updateScore = (Winner) => {
+    if (Winner === 'human') {
+        humanScore++
+    }else if (Winner === 'computer') {
+        computerScore++
+    }
 }
+updateScore('computer');
+updateScore('computer');
+console.log(computerScore); 
 
 let advanceRound = () => {
 
