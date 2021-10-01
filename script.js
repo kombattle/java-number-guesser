@@ -20,7 +20,7 @@ let compareGuesses = (humanGuess,computerGuess,targetGuess) => {
     return alert("you can put number only 0 to 9")
   }
   else {
-    return "Computer Win You Noob Shit"
+    return "Computer Win
   }
 
 }
